@@ -2,6 +2,8 @@ import os
 import time
 
 def save_transcription(transcription):
+    """transcription => giving text
+    saves it into a .txt file"""
     time_stamp = str(int(time.time()))
     file_name = f"{time_stamp}.txt"
     
@@ -15,4 +17,3 @@ def save_transcription(transcription):
     with open(path_file, "w") as file:
         file.write(transcription)
 
-text = save_transcription("oi oi oi")
